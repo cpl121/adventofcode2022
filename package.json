@@ -1,0 +1,17 @@
+{
+  "name": "cpl121_adventofcode",
+  "version": "1.0.0",
+  "description": "Adventofcode 2022 for cpl121",
+  "main": "index.ts",
+  "scripts": {
+    "dev": "ts-node ./src/index.ts"
+  },
+  "keywords": [],
+  "author": "cpl121",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "18.7.14",
+    "ts-node": "^10.9.1",
+    "typescript": "4.8.2"
+  }
+}
