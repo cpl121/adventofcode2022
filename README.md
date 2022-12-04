@@ -5,4 +5,4 @@ Advent of Code is an Advent calendar of small programming puzzles for a variety 
 
 ## Developed by CPL121
 <p align="center"> Senior computer engineer graduated from the UAH in computer engineering and with a master's degree in industry 4.0. <br>
-Full-stack web developer since September 2019.<br> Currently discovering and developing with web3 and blockchain technologies, mainly Solana and Ethereum</p>
+Full-stack web developer since September 2018.<br> Currently discovering and developing with web3 and blockchain technologies, mainly Solana and Ethereum</p>
