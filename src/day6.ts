@@ -1,5 +1,5 @@
-import fs from 'fs';
-import { chunkArray } from '../utils/actions';
+import { dataDay6 } from './lib/resources/index'
+import { chunkArray } from './lib/actions';
 
 const SEQUENCE_CHARACTERS = 4;
 const SEQUENCE_CHARACTERS_2 = 14;
@@ -25,7 +25,7 @@ function getStartPacketMarker(data: string[], characters: number): number[] {
     return result
 }
 
-const data: string = fs.readFileSync('resources/day6data.txt', 'utf8')
+const data: string = dataDay6.default
 const arrayData: string[] = chunkArray(data)
 
 // Part 1

@@ -1,5 +1,5 @@
-import fs from 'fs';
-import { chunkArray } from '../utils/actions';
+import { chunkArray } from './lib/actions';
+import { dataDay1 } from './lib/resources/index'
 
 function sumElements(array: string[]): number[] {
     let sum = 0;
@@ -19,7 +19,7 @@ function sumElements(array: string[]): number[] {
     return arrayOfResults
 }
 
-const data: string = fs.readFileSync('resources/day1data.txt', 'utf8')
+const data: string = dataDay1.default
 const arrayData: string[] = chunkArray(data)
 const arraySumData: number[] = sumElements(arrayData)
 const result: number[] = arraySumData.sort((a: number, b: number) => b - a)

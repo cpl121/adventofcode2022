@@ -1,5 +1,5 @@
-import fs from 'fs';
-import { chunkArray } from '../utils/actions';
+import { chunkArray } from './lib/actions';
+import { dataDay2 } from './lib/resources/index'
 
 function battle(opponent: string, own: string): number {
     switch (opponent) {
@@ -114,7 +114,7 @@ function sumElements(array: number[]): number {
 }
 
 
-const data: string = fs.readFileSync('resources/day2data.txt', 'utf8')
+const data: string = dataDay2.default
 const arrayData: string[] = chunkArray(data)
 
 // Part 1

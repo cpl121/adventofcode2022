@@ -1,5 +1,5 @@
-import fs from 'fs';
-import { chunkArray } from '../utils/actions';
+import { dataDay5 } from './lib/resources/index'
+import { chunkArray } from './lib/actions';
 
 const CHARACTER_INDEX = 4;
 
@@ -68,7 +68,7 @@ function orderStacks2(data: string[]): string[][] {
     return orderStacks
 }
 
-const data: string = fs.readFileSync('resources/day5data.txt', 'utf8')
+const data: string = dataDay5.default
 const arrayData: string[] = chunkArray(data)
 
 // Part 1

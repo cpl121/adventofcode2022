@@ -1,5 +1,5 @@
-import fs from 'fs';
-import { chunkArray } from '../utils/actions';
+import { dataDay3 } from './lib/resources/index'
+import { chunkArray } from './lib/actions';
 
 const INDEX_CHARACTER_IN_ASCII = 96;
 const EXTRA_PRIORITY_BY_UPPERCASE = 26;
@@ -67,7 +67,7 @@ function splitArrayIntoChunks(array: string[]): string[][] {
 }
 
 
-const data: string = fs.readFileSync('resources/day3data.txt', 'utf8')
+const data: string = dataDay3.default
 const arrayData: string[] = chunkArray(data)
 
 // Part 1

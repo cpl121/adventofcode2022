@@ -1,5 +1,5 @@
-import fs from 'fs';
-import { chunkArray } from '../utils/actions';
+import { dataDay4 } from './lib/resources/index'
+import { chunkArray } from './lib/actions';
 
 function generateAllNumbersInList(list: string): number[] {
     const listSplitted = list.split('-');
@@ -36,7 +36,7 @@ function evaluateData2(array: string[]): number {
     return count;
 }
 
-const data: string = fs.readFileSync('resources/day4data.txt', 'utf8')
+const data: string = dataDay4.default
 const arrayData: string[] = chunkArray(data)
 
 // Part 1
