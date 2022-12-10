@@ -8,8 +8,8 @@ function splitArray(array: string[]): string[][] {
     let arrayOfArrays: string[][] = [];
     for (let i = 0; i < array.length; i++) {
         const element = array[i];
-        const prueba = Math.floor(element.length / 2);
-        arrayOfArrays[i] = [element.slice(0, prueba), element.slice(prueba)];
+        const splitArray = Math.floor(element.length / 2);
+        arrayOfArrays[i] = [element.slice(0, splitArray), element.slice(splitArray)];
     }
     return arrayOfArrays;
 }
