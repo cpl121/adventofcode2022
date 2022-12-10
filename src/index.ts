@@ -5,6 +5,7 @@ import * as day4 from './day4';
 import * as day5 from './day5';
 import * as day6 from './day6';
 import * as day7 from './day7';
+import * as day8 from './day8';
 
 console.log("--------------------- DAY 1 ---------------------");
 console.log("Result for day 1 part 1", day1.result1);
@@ -28,3 +29,6 @@ console.log("--------------------- DAY 7 ---------------------");
 console.log("Result for day 7 part 1", day7.result1);
 console.log("Result for day 7 part 2", day7.result2);
 console.log("--------------------- DAY 8 ---------------------");
+console.log("Result for day 8 part 1", day8.result1);
+console.log("Result for day 8 part 2", day8.result2);
+console.log("--------------------- DAY 9 ---------------------");
